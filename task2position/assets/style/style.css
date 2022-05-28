@@ -1,1 +1,61 @@
-Здесь будет стиль
+/* * {
+    border: 1px solid blueviolet;
+} */
+
+.header, .footer {
+    background-color: #E6E6FA;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    min-height: 80vh;
+    background-color: #FFE4E1;
+}
+
+.mainpart {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 70vw;
+}
+
+.aside {
+    width: 29vw;
+    text-align: center;
+    background-color: #E0FFFF;
+}
+
+.mainsections {
+    display: flex;
+    min-height: 60%;
+    min-width: 90%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+#sec3, .sec12 {
+    background-color: #FFB6C1;
+    text-align: center;
+}
+
+#sec3 {
+    min-width: 98%;   
+}
+
+.sec12 {
+    min-width: 48%;
+    margin: 0.5%;
+    margin-bottom: 2%;
+}
