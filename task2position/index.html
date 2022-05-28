@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/normalize.css">
+    <title>Position</title>
+
+    <style>
+        * {
+            border: 1px solid blueviolet;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            background-color:#E6E6FA;
+        }
+
+        .main {
+            display: flex;
+            min-height: 70vh;
+            background-color:#FFE4E1;
+        }
+
+        .mainpart {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: space-between;
+            width: 70vw;
+        }
+
+        .aside {
+            width: 29vw;
+            text-align: center;
+            background-color:#E0FFFF;
+        }
+
+        .mainsections {
+            display: flex;
+            min-height: 60%;
+            min-width: 90%;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            margin: auto;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color:#E6E6FA;
+        }
+
+        #sec3 {
+            min-width: 98%;
+            background-color:#FFB6C1;
+            text-align: center;
+        }
+
+        .sec12 {
+            min-width: 48%;
+            text-align: center;
+            margin: 0.5%;
+            background-color:#FFB6C1;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <h1>Шапка страницы</h1>
+    </header>
+    <main class="main">
+        <div class="mainpart">
+            <div> 
+                <h2>Основная часть</h2>
+            </div>
+            <div class="mainsections">
+                <section class="sec12">
+                    <h3>Ещё 1</h3>
+                </section>
+                <section class="sec12">
+                    <h3>Ещё 2</h3>
+                </section>
+                <section id="sec3">
+                    <h3>Ещё 3</h3>
+                </section>
+            </div>
+        </div>
+        
+        <aside class="aside">
+            <h2>Боковая область</h2>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <h3>Секция 1</h3>
+        </div>
+        <div>
+            <h3>Секция 2</h3>
+        </div>
+        <div>
+            <h3>Секция 3</h3>
+        </div>
+        <div>
+            <h3>Секция 4</h3>
+        </div>
+    </footer>
+</body>
+
+</html>

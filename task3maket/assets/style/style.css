@@ -1,0 +1,182 @@
+        @font-face {
+            font-family: 'ZonaPro';
+            src: url("../fonts/zonapro.ttf");
+        }
+
+        @font-face {
+            font-family: 'Akrobat';
+            src: url("../fonts/akrobat.ttf")
+        }
+
+        #logo {
+            display:flex;
+            justify-content: flex-start;
+            /* position: absolute;
+            width: 135px;
+            height: 75px;
+            left: 84px;
+            top: 23px;*/
+        }
+
+        #menu {
+            position: absolute;
+            width: 643px;
+            height: 25px;
+            left: 1062px;
+            top: 48px;
+
+            word-spacing: 50px;
+        }
+
+        #rectangle {
+            display:flex;
+            justify-content: flex-end;
+            width: 1640px;
+            height: 942px;
+
+
+            /* position: absolute; 
+            width: 1640px;
+            height: 942px;
+            left: 280px;
+            top: 0px; */
+
+            background-color: #FFEA2F;
+        }
+
+        h1 {
+            position: absolute;
+            width: 1077px;
+            height: 255px;
+            left: 86px;
+            top: 326px;
+
+            font-family: 'ZonaPro';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 72px;
+            line-height: 85px;
+            text-transform: uppercase;
+        }
+
+        #links {
+            position: absolute;
+            width: 32px;
+            height: 282px;
+            left: 88px;
+            top: 660px;
+        }
+
+        #unicorn {
+            position: absolute;
+            width: 786px;
+            height: 733px;
+            left: 1094px;
+            top: 169px;
+        }
+
+        #text {
+            position: absolute;
+            width: 459px;
+            height: 90px;
+            left: 401px;
+            top: 705px;
+        }
+
+        #eng,
+        #more {
+            width: 120px;
+            height: 110px;
+            background-color: #CE0002;
+            color: #FFFFFF;
+        }
+
+        .textakrobat,
+        #inc,
+        #menu {
+            font-family: 'Akrobat';
+            font-weight: 600;
+            font-style: normal;
+            font-size: 20px;
+            line-height: 25px;
+        }
+
+        .footer {
+            color: #7E7E7E;
+        }
+
+        #eng {
+            position: absolute;
+            left: 1800px;
+            top: 0px;
+        }
+
+        #more {
+            position: absolute;
+            left: 215px;
+            top: 690px;
+
+            padding-top: 16px;
+        }
+
+        footer {
+            position: absolute;
+            width: 1922px;
+            height: 54px;
+            left: -2px;
+            top: 1019px;
+            
+            background-color: #EFEFEF;
+        }
+
+        #inc,
+        #footernav,
+        #footerlinks {
+            position: absolute;
+            bottom: 16px;
+        }
+
+        #inc {
+            left: 27px;
+        }
+
+        #footernav {
+            left: 674px;
+
+            word-spacing: 40px;
+        }
+
+        #footerlinks {
+            right: 25px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .navigation {
+            color: #000000;
+        }
+
+        .btn {
+            position: relative;
+            left: 16px;
+        }
+
+        #btn {
+            position: relative;
+            left: 16px;
+            color: #FFFFFF;
+        }
+
+        .navigation:first-child {
+            color: #FF0000;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:focus {
+            background-color: #CE0002;
+        }
