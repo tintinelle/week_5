@@ -6,149 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style/normalize.css">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="assets/style/style.css">
     <title>Toy.Stream</title>
-
-    <style>
-        @font-face {
-            font-family: 'ZonaPro';
-            src: url("assets/fonts/zonapro.ttf");
-        }
-
-        @font-face {
-            font-family: 'Akrobat';
-            src: url("assets/fonts/akrobat.ttf")
-        }
-
-        * {
-            box-sizing: border-box;
-            border: 1px solid blueviolet;
-        }
-
-        body {
-            min-height: 100vh;
-        }
-
-        .main,
-        .header {
-            background-image: linear-gradient(to right, #FFFFFF 0% 15%, #FFEA2F 15% 100%);
-        }
-
-
-
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        #logo {
-            margin-left: 3vw;
-        }
-
-        #menu {
-            display: flex;
-            justify-content: space-between;
-            flex-basis: 30vw;
-        }
-
-        #eng,
-        #more {
-            width: 120px;
-            height: 120px;
-            background-color: #CE0002;
-            color: #FFFFFF;
-        }
-
-        
-
-
-        .footer {
-            display: flex;
-            justify-content: space-between;
-            background-color: #EFEFEF;
-        }
-
-        #links {
-            display: flex;
-            flex-direction: column;
-            margin-left: 3vw;
-        }
-
-        #h1 {
-            margin-left: 3vw;
-            align-self: center;
-
-            font-family: 'ZonaPro';
-            font-style: normal;
-            font-size: 380%;
-            text-transform: uppercase;
-        }
-
-
-
-
-        .textakrobat,
-        #inc,
-        #menu {
-            font-family: 'Akrobat';
-            font-weight: 600;
-            font-style: normal;
-            font-size: 20px;
-            line-height: 25px;
-        }
-
-        .navigation:first-child {
-            color: #FF0000;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-
-        a {
-            text-decoration: none;
-        }
-
-        .h1pic {
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        .maininfo {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: flex-start;
-        }
-
-        #more {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-
-            margin-left: 5vw;
-        }
-
-        #text {
-            width: 33%;
-            margin-left: 3.5vw;
-        }
-
-
-        #unicorn {
-            width: 38vw;
-            margin-bottom: 5vh;
-        }
-    </style>
-
 </head>
 
 <body>
-    <header class="header">
+    <header id="header">
         <img id="logo" src="assets/img/logo.svg" alt="logo">
+
         <nav id="menu">
             <a href="#main" class="navigation">Главная</a>
             <a href="#company" class="navigation">Компания</a>
@@ -157,14 +22,13 @@
             <a href="#news" class="navigation">Новости</a>
             <a href="#contacts" class="navigation">Контакты</a>
         </nav>
+
         <button id="eng" class="textakrobat" type="button">ENG</button>
     </header>
 
 
-    <main class="main">
-
-        <div class="h1pic">
-                
+    <main id="main">
+        <div class="maininfo_pic">
             <section class="maininfo">
                 <h1 id="h1">Мы создаем мобильные игры, в которые ты играешь</h1>
                 <section id="links">
@@ -178,34 +42,31 @@
 
                 <div id="more" class="textakrobat">
                     <a id="btn" href="https://toy.stream/ru/компания/">Узнать подробнее</a>
-                    <img id="arrow" class="btn" src="assets/img/arrow.svg" alt="arrow">
+                    <img src="assets/img/arrow.svg" alt="arrow">
                 </div>
 
                 <p id="text" class="textakrobat">
-                    «Оригинальные идеи, качество реализации игровых механик и внимание к деталям интерфейса - наши
-                    основные принципы.»
+                    «Оригинальные идеи, качество реализации игровых механик и внимание к деталям интерфейса - наши основные принципы.»
                 </p>
             </section>
-            
 
-                <img id="unicorn" src="assets/img/group.svg" alt="unicorn">
+            <img id="unicorn" src="assets/img/group.svg" alt="unicorn">
         </div>
-
-
     </main>
 
-    <footer class="footer">
-        <div id="inc">© Toy.Stream, Inc.</div>
-        <section id="footernav" class="textakrobat">
-            <a href="#main">Главная</a>
-            <a href="#company">Компания</a>
-            <a href="#games">Игры</a>
-            <a href="#career">Карьера</a>
-            <a href="#news">Новости</a>
-            <a href="#contacts">Контакты</a>
+    <footer id="footer">
+        <div class="textakrobat"> © Toy.Stream, Inc. </div>
+
+        <section>
+            <a href="#main" class="navigation"> Главная </a>
+            <a href="#company" class="navigation"> Компания </a>
+            <a href="#games" class="navigation"> Игры </a>
+            <a href="#career" class="navigation"> Карьера </a>
+            <a href="#news" class="navigation"> Новости </a>
+            <a href="#contacts" class="navigation"> Контакты </a>
         </section>
 
-        <section id="footerlinks">
+        <section>
             <a href="https://www.pinterest.ru/"><img src="assets/img/pinterest.svg" alt="pinterest"></a>
             <a href="https://www.behance.net/"><img src="assets/img/behance.svg" alt="behance"></a>
             <a href="https://dribbble.com/"><img src="assets/img/dribbble.svg" alt="dribble"></a>
