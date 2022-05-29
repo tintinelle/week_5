@@ -22,25 +22,34 @@
 
         * {
             box-sizing: border-box;
+            border: 1px solid blueviolet;
         }
 
-        main,
-        header {
+        body {
+            min-height: 100vh;
+        }
+
+        .main,
+        .header {
             background-image: linear-gradient(to right, #FFFFFF 0% 15%, #FFEA2F 15% 100%);
         }
+
+
 
         .header {
             display: flex;
             justify-content: space-between;
+            align-items: center;
         }
 
         #logo {
             margin-left: 3vw;
-            margin-top: 2vh;
         }
 
         #menu {
-            word-spacing: 2vw;
+            display: flex;
+            justify-content: space-between;
+            flex-basis: 30vw;
         }
 
         #eng,
@@ -50,6 +59,8 @@
             background-color: #CE0002;
             color: #FFFFFF;
         }
+
+        
 
 
         .footer {
@@ -64,14 +75,13 @@
             margin-left: 3vw;
         }
 
-        h1 {
+        #h1 {
             margin-left: 3vw;
-            width: 56vw;
-            height: 23vh;
+            align-self: center;
 
             font-family: 'ZonaPro';
             font-style: normal;
-            font-size: 400%;
+            font-size: 380%;
             text-transform: uppercase;
         }
 
@@ -109,10 +119,28 @@
         .maininfo {
             display: flex;
             flex-wrap: wrap;
+            align-items: flex-start;
         }
+
+        #more {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            margin-left: 5vw;
+        }
+
+        #text {
+            width: 33%;
+            margin-left: 3.5vw;
+        }
+
 
         #unicorn {
             width: 38vw;
+            margin-bottom: 5vh;
         }
     </style>
 
@@ -138,7 +166,7 @@
         <div class="h1pic">
                 
             <section class="maininfo">
-                <h1>Мы создаем мобильные игры, в которые ты играешь</h1>
+                <h1 id="h1">Мы создаем мобильные игры, в которые ты играешь</h1>
                 <section id="links">
                     <a href="https://www.pinterest.ru/"><img src="assets/img/pinterest.svg" alt="pinterest"></a>
                     <a href="https://www.behance.net/"><img src="assets/img/behance.svg" alt="behance"></a>
@@ -150,7 +178,7 @@
 
                 <div id="more" class="textakrobat">
                     <a id="btn" href="https://toy.stream/ru/компания/">Узнать подробнее</a>
-                    <img class="btn" src="assets/img/arrow.svg" alt="arrow">
+                    <img id="arrow" class="btn" src="assets/img/arrow.svg" alt="arrow">
                 </div>
 
                 <p id="text" class="textakrobat">
