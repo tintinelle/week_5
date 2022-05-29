@@ -6,13 +6,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style/normalize.css">
-    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="">
     <title>Toy.Stream</title>
+
+    <style>
+        @font-face {
+            font-family: 'ZonaPro';
+            src: url("assets/fonts/zonapro.ttf");
+        }
+
+        @font-face {
+            font-family: 'Akrobat';
+            src: url("assets/fonts/akrobat.ttf")
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        main,
+        header {
+            background-image: linear-gradient(to right, #FFFFFF 0% 15%, #FFEA2F 15% 100%);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #logo {
+            margin-left: 3vw;
+            margin-top: 2vh;
+        }
+
+        #menu {
+            word-spacing: 2vw;
+        }
+
+        #eng,
+        #more {
+            width: 120px;
+            height: 120px;
+            background-color: #CE0002;
+            color: #FFFFFF;
+        }
+
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            background-color: #EFEFEF;
+        }
+
+        #links {
+            display: flex;
+            flex-direction: column;
+            margin-left: 3vw;
+        }
+
+        h1 {
+            margin-left: 3vw;
+            width: 56vw;
+            height: 23vh;
+
+            font-family: 'ZonaPro';
+            font-style: normal;
+            font-size: 400%;
+            text-transform: uppercase;
+        }
+
+
+
+
+        .textakrobat,
+        #inc,
+        #menu {
+            font-family: 'Akrobat';
+            font-weight: 600;
+            font-style: normal;
+            font-size: 20px;
+            line-height: 25px;
+        }
+
+        .navigation:first-child {
+            color: #FF0000;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+
+        .h1pic {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .maininfo {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #unicorn {
+            width: 38vw;
+        }
+    </style>
+
 </head>
 
 <body>
-    <div id="rectangle"></div>
-    <header style="background-color: #FFEE2F;">
+    <header class="header">
         <img id="logo" src="assets/img/logo.svg" alt="logo">
         <nav id="menu">
             <a href="#main" class="navigation">Главная</a>
@@ -25,37 +132,49 @@
         <button id="eng" class="textakrobat" type="button">ENG</button>
     </header>
 
-    <main>
-        <h1>Мы создаем мобильные игры, в которые ты играешь</h1>
-        <section id="links">
-            <a href="https://www.pinterest.ru/"><img src="assets/img/pinterest.svg" alt="pinterest"></a>
-            <a href="https://www.behance.net/"><img src="assets/img/behance.svg" alt="behance"></a>
-            <a href="https://dribbble.com/"><img src="assets/img/dribbble.svg" alt="dribble"></a>
-            <a href="https://www.snapchat.com/"><img src="assets/img/snapchat.svg" alt="snapchat"></a>
-            <a href="https://linkedin.com/"><img src="assets/img/linkedin.svg" alt="linkedin"></a>
-            <a href="https://www.facebook.com/"><img src="assets/img/facebook.svg" alt="facebook"></a>
-        </section>
 
-        <img id="unicorn" src="assets/img/group.svg" alt="unicorn">
-        <p id="text" class="textakrobat">
-            «Оригинальные идеи, качество реализации игровых механик и внимание к деталям интерфейса - наши основные
-            принципы.»
-        </p>
-        <div id="more" class="textakrobat">
-            <a id="btn" href="https://toy.stream/ru/компания/">Узнать подробнее</a>
-            <img class="btn" src="assets/img/arrow.svg" alt="arrow">
+    <main class="main">
+
+        <div class="h1pic">
+                
+            <section class="maininfo">
+                <h1>Мы создаем мобильные игры, в которые ты играешь</h1>
+                <section id="links">
+                    <a href="https://www.pinterest.ru/"><img src="assets/img/pinterest.svg" alt="pinterest"></a>
+                    <a href="https://www.behance.net/"><img src="assets/img/behance.svg" alt="behance"></a>
+                    <a href="https://dribbble.com/"><img src="assets/img/dribbble.svg" alt="dribble"></a>
+                    <a href="https://www.snapchat.com/"><img src="assets/img/snapchat.svg" alt="snapchat"></a>
+                    <a href="https://linkedin.com/"><img src="assets/img/linkedin.svg" alt="linkedin"></a>
+                    <a href="https://www.facebook.com/"><img src="assets/img/facebook.svg" alt="facebook"></a>
+                </section>
+
+                <div id="more" class="textakrobat">
+                    <a id="btn" href="https://toy.stream/ru/компания/">Узнать подробнее</a>
+                    <img class="btn" src="assets/img/arrow.svg" alt="arrow">
+                </div>
+
+                <p id="text" class="textakrobat">
+                    «Оригинальные идеи, качество реализации игровых механик и внимание к деталям интерфейса - наши
+                    основные принципы.»
+                </p>
+            </section>
+            
+
+                <img id="unicorn" src="assets/img/group.svg" alt="unicorn">
         </div>
+
+
     </main>
 
-    <footer>
-        <div id="inc" class="footer">© Toy.Stream, Inc.</div>
+    <footer class="footer">
+        <div id="inc">© Toy.Stream, Inc.</div>
         <section id="footernav" class="textakrobat">
-            <a href="#main" class="footer">Главная</a>
-            <a href="#company" class="footer">Компания</a>
-            <a href="#games" class="footer">Игры</a>
-            <a href="#career" class="footer">Карьера</a>
-            <a href="#news" class="footer">Новости</a>
-            <a href="#contacts" class="footer">Контакты</a>
+            <a href="#main">Главная</a>
+            <a href="#company">Компания</a>
+            <a href="#games">Игры</a>
+            <a href="#career">Карьера</a>
+            <a href="#news">Новости</a>
+            <a href="#contacts">Контакты</a>
         </section>
 
         <section id="footerlinks">
@@ -69,4 +188,5 @@
     </footer>
 
 </body>
+
 </html>

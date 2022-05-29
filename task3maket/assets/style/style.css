@@ -1,3 +1,7 @@
+* {
+    border: 1px solid blueviolet;
+}
+        
         @font-face {
             font-family: 'ZonaPro';
             src: url("../fonts/zonapro.ttf");
@@ -6,26 +10,6 @@
         @font-face {
             font-family: 'Akrobat';
             src: url("../fonts/akrobat.ttf")
-        }
-
-        #logo {
-            display:flex;
-            justify-content: flex-start;
-            /* position: absolute;
-            width: 135px;
-            height: 75px;
-            left: 84px;
-            top: 23px;*/
-        }
-
-        #menu {
-            position: absolute;
-            width: 643px;
-            height: 25px;
-            left: 1062px;
-            top: 48px;
-
-            word-spacing: 50px;
         }
 
         #rectangle {
@@ -43,6 +27,36 @@
 
             background-color: #FFEA2F;
         }
+
+
+        #logo {
+            display:flex;
+            justify-content: flex-start;
+            /* position: absolute;
+            width: 135px;
+            height: 75px;
+            left: 84px;
+            top: 23px;*/
+        }
+        #menu {
+            position: absolute;
+            width: 643px;
+            height: 25px;
+            left: 1062px;
+            top: 48px;
+
+            word-spacing: 50px;
+        }
+
+        #eng,
+        #more {
+            width: 120px;
+            height: 110px;
+            background-color: #CE0002;
+            color: #FFFFFF;
+        }
+
+
 
         h1 {
             position: absolute;
@@ -83,13 +97,7 @@
             top: 705px;
         }
 
-        #eng,
-        #more {
-            width: 120px;
-            height: 110px;
-            background-color: #CE0002;
-            color: #FFFFFF;
-        }
+
 
         .textakrobat,
         #inc,
