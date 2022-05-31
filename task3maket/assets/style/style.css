@@ -8,26 +8,40 @@
     src: url("../fonts/akrobat.ttf")
 }
 
-#main,
-#header {
+.main,
+.header {
     background-image: linear-gradient(to right, #FFFFFF 0% 15%, #FFEA2F 15% 100%);
 }
 
-#header {
+.main {
+    margin-bottom: 2.5%;
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#logo {
-    margin-left: 3vw;
+.header .navigation {
+    color: #000000;
 }
 
-#menu {
+.header .navigation:first-child {
+    color: #FF0000;
+}
+
+.logo {
+    margin-left: 2.7%;
+}
+
+.menu {
     display: flex;
     justify-content: space-between;
 
     flex-basis: 30vw;
+    margin-left: auto;
+    margin-right: 5%;
 }
 
 #eng,
@@ -47,11 +61,11 @@
 .maininfo {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
 }
 
-#h1 {
-    margin-left: 3vw;
+.h1 {
+    margin-left: 5%;
     align-self: center;
 
     font-family: 'ZonaPro';
@@ -60,11 +74,12 @@
     text-transform: uppercase;
 }
 
-#links {
+.main .links {
     display: flex;
     flex-direction: column;
-    margin-left: 3vw;
+    margin-left: 5%;
 }
+
 
 #more {
     display: flex;
@@ -73,17 +88,17 @@
     align-items: center;
     text-align: center;
 
-    margin-left: 5vw;
+    margin-left: 9%;
 }
 
 #text {
     width: 33%;
-    margin-left: 3.5vw;
+    margin-left: 6%;
 }
 
-#unicorn {
-    width: 38vw;
-    margin-bottom: 2%;
+.unicorn {
+    width: 37%;
+    margin-bottom: 1.5%;
     margin-right: 2%;
 }
 
@@ -96,7 +111,7 @@
     line-height: 25px;
 }
 
-#footer {
+.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,21 +121,17 @@
 }
 
 #eng,
-#btn {
+.btn {
     color: #FFFFFF;
 }
 
-footer .navigation,
-#footer {
+.footer .navigation,
+.footer {
     color: #7E7E7E;
 }
 
-.navigation {
-    color: #000000;
-}
-
-header .navigation:first-child {
-    color: #FF0000;
+.footer .links {
+    margin-right: 2%;
 }
 
 a:hover {
